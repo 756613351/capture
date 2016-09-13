@@ -1,3 +1,4 @@
+#coding:utf-8
 """
 Django settings for capture_proj project.
 
@@ -81,3 +82,23 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#--------------------------------
+SOURCE_URL = 'http://dj.shgt.com/'
+LOGIN_URL = SOURCE_URL+'login'
+
+USERNAME = 'viewer'
+PASSWORD = 'viewer_123123'
+
+PICTURE_DIR = os.path.join(BASE_DIR, 'static/dj')
+
+TARGET_URL = [
+    {u'数据库服务器': SOURCE_URL+'dashboard/db/2-1-xi-tong-jian-kong-shu-ju-ku-fu-wu-qi'},
+    {u'防火墙': SOURCE_URL+'dashboard/db/1-1-wang-luo-she-bei-fang-huo-qiang'},
+    {u'应用服务器': SOURCE_URL+'dashboard/db/2-2xi-tong-jian-kong-ying-yong-fu-wu-qi'},
+    {u'数据库监控': SOURCE_URL+'dashboard/db/3-shu-ju-ku-jian-kong'},
+    {u'es': SOURCE_URL+'dashboard/db/4-es'},
+    {u'外部接口': SOURCE_URL+'dashboard/db/5-wai-bu-jie-kou'},
+    {u'典型业务': SOURCE_URL+'dashboard/db/6-dian-xing-ye-wu'},
+    {u'mq': SOURCE_URL+'dashboard/db/7-rabbitmq-jian-kong'},
+]

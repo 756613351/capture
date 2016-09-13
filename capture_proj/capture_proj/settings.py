@@ -84,11 +84,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #--------------------------------
-SOURCE_URL = 'http://dj.shgt.com/'
+SOURCE_URL = '***'
 LOGIN_URL = SOURCE_URL+'login'
 
-USERNAME = 'viewer'
-PASSWORD = 'viewer_123123'
+USERNAME = '**'
+PASSWORD = '**'
 
 PICTURE_DIR = os.path.join(BASE_DIR, 'static/dj')
 
